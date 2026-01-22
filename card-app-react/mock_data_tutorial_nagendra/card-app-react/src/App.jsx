@@ -25,7 +25,8 @@ function App() {
   }, [userData]);
 
   const deleteData = (id) => {
-    fetch(`http://localhost:8080/users/${id}`, {
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+    fetch(`${API_URL}/users/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
