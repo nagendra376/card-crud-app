@@ -2,14 +2,15 @@
   "name": "mock_data_tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.cjs",
   "scripts": {
-    "start": "json-server --watch mock_data.json --port 8080"
+    "start": "node server.cjs",
+    "dev": "json-server --watch mock_data.json --port 8080"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "json-server": "0.17.4"
   }
 }
